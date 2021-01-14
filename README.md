@@ -1,5 +1,5 @@
-These lessons give step by step instructions to help you get started
-developing CWL workflows on Arvados.
+These lessons give step by step instructions for using Visual Studio
+Code to develop CWL workflows on Arvados.
 
 1. Install & set up ssh client on Windows
 1. Install vscode and relevant extensions
