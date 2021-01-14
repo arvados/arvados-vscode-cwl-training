@@ -1,0 +1,4 @@
+#!/bin/sh
+echo $1 > API_HOST
+echo $2 > API_TOKEN
+chmod og-rw API_HOST API_TOKEN

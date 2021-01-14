@@ -1,0 +1,7 @@
+test -s API_HOST || (echo "missing API_HOST, run the 'Configure Arvados' task"; exit 1)
+test -s API_TOKEN || (echo "missing API_TOKEN, run the 'Configure Arvados' task"; exit 1)
+export ARVADOS_API_HOST=$(cat API_HOST)
+export ARVADOS_API_TOKEN=$(cat API_TOKEN)
+if test -s $DIR/PROJECT_UUID ; then
+    PROJECT_UUID="--project-uuid $(cat $DIR/PROJECT_UUID)"
+fi

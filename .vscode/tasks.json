@@ -1,0 +1,47 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run CWL workflow on Arvados",
+            "type": "shell",
+            "command": "scripts/run-workflow ${file}",
+            "problemMatcher": []
+        },
+        {
+            "label": "Register or update CWL workflow on Arvados Workbench",
+            "type": "shell",
+            "command": "scripts/upload-workflow ${file}",
+            "problemMatcher": []
+        },
+        {
+            "label": "Configure Arvados",
+            "type": "shell",
+            "command": "scripts/configure-arv ${input:api_host} ${input:api_token}",
+            "problemMatcher": []
+        },
+        {
+            "label": "Set project UUID",
+            "type": "shell",
+            "command": "scripts/set-project ${fileDirname} ${input:project_uuid}",
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "api_host",
+            "type": "promptString",
+            "description": "Value for ARVADOS_API_HOST"
+        },
+        {
+            "id": "api_token",
+            "type": "promptString",
+            "description": "Value for ARVADOS_API_TOKEN",
+            "password": true
+        },
+        {
+            "id": "project_uuid",
+            "type": "promptString",
+            "description": "The project UUID"
+        }
+    ]
+}

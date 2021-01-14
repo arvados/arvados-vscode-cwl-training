@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+FILE=$1
+DIR=$(dirname $FILE)
+. $(dirname $0)/setup-env
+if test -s $DIR/input.yaml ; then
+    INPUT=$DIR/input.yaml
+fi
+arvados-cwl-runner $PROJECT_UUID $FILE $INPUT
