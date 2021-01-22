@@ -125,7 +125,7 @@ The default value for the “message” parameter will taken from the “lesson3
 
 # Run a workflow without registering it
 
-The “message” parameter will be taken from the “lesson4/input.yaml” file.  This is useful during development.
+The “message” parameter will be taken from the file “lesson4/main-input.yaml”.  This is useful during development.
 
 1. Workbench: Go to “+NEW” and select “New project”
    1. Enter a name for the project like “Lesson 4”
