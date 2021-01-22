@@ -3,7 +3,8 @@ set -e
 FILE=$1
 DIR=$(dirname $FILE)
 . $(dirname $0)/setup-env
-if test -s $DIR/input.yaml ; then
-    INPUT=$DIR/input.yaml
+FILEBASE=$(basename "$FILE" .cwl)
+if test -s $DIR/${FILEBASE}-input.yaml ; then
+    INPUT=$DIR/${FILEBASE}-input.yaml
 fi
 arvados-cwl-runner $PROJECT_UUID $FILE $INPUT
