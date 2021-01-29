@@ -39,7 +39,7 @@ Linux and MacOS users can skip this step.
    1. Search for “benten” and install “CWL (Rabix/Benten)”
    1. Choose “Install extension on the remote ssh host”
 1. Vscode: On the left side bar, choose “Explorer”
-   1. Select “Clone Repository” and then enter “https://github.com/tetron/vscode-cwl-testing.git”
+   1. Select “Clone Repository” and then enter “https://github.com/arvados/arvados-vscode-cwl-training”
    1. Choose “Open”
 1. Go to Arvados Workbench
    1. Workbench: In the user menu, select “Current token”
