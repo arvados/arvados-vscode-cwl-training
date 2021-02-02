@@ -44,9 +44,10 @@ Code (abbreviated "vscode") to develop CWL workflows on Arvados.
 ## 2. VSCode setup
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/) and start it up
-1. Vscode: go to `Extensions` ![](images/Extensions.png)
-   1. search for `remote development` and install the Remote Development extension pack from Microsoft
-1. Vscode: On the left side bar, choose `Remote explorer`
+1. Vscode: On the left sidebar, select `Extensions` ![](images/Extensions.png)
+   1. In `Search Extensions in Marketplace` enter "remote development".
+   1. Choose and install the "Remote Development" extension pack from Microsoft
+1. Vscode: On the left sidebar, choose `Remote Explorer` ![](images/RemoteExplorer.png)
    1. In the drop down, choose `SSH targets`
    1. Click `Add new`
    1. Enter the `ssh shell…` command line you used in the previous section, step 1.4.1
