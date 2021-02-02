@@ -48,14 +48,16 @@ Code (abbreviated "vscode") to develop CWL workflows on Arvados.
    1. In `Search Extensions in Marketplace` enter "remote development".
    1. Choose and install the "Remote Development" extension pack from Microsoft
 1. Vscode: On the left sidebar, choose `Remote Explorer` ![](images/RemoteExplorer.png)
-   1. In the drop down, choose `SSH targets`
-   1. Click `Add new`
+   1. At the top of the Remote Explorer panel choose `SSH targets` ![](images/SSHTargets.png)
+   1. Click `Add New` ![](images/AddNew.png)
    1. Enter the `ssh shell…` command line you used in the previous section, step 1.4.1
-   1. Right click the ssh target in the list and select “connect to host in current window`
-1. Vscode: go to `Extensions`
-   1. Search for `benten` and install `CWL (Rabix/Benten)`
-   1. Choose `Install extension on the remote ssh host`
-1. Vscode: On the left side bar, choose `Explorer`
+      1. If it asks you `Select SSH configuration file to update` choose the first one in the list.
+   1. Right click the newly added ssh target in the list and select “connect to host in current window`
+   1. If it asks `Select platform of the remote host` select `Linux`.
+1. Vscode: On the left sidebar, go back to `Extensions` ![](images/Extensions.png)
+   1. Search for "benten" and install `CWL (Rabix/Benten)`
+   1. You should see a message `Extension is enabled on 'SSH: ...' and disabled locally.`
+1. Vscode: On the left sidebar, choose `Explorer` ![](images/Explorer.png)
    1. Select `Clone Repository` and then enter [https://github.com/arvados/arvados-vscode-cwl-training](https://github.com/arvados/arvados-vscode-cwl-training)
    1. Choose `Open`
 1. Go to Arvados Workbench
