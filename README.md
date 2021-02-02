@@ -2,10 +2,11 @@ These lessons give step by step instructions for using Visual Studio
 Code (abbreviated "vscode") to develop CWL workflows on Arvados.
 
 1. Set up SSH
-1. Install vscode and necessary extensions
-1. Use vscode to connect to an Arvados shell node for development
-1. Create an simple command line tool, run it, and view the log
-1. Upload input, create a command line tool to process it, and view the output
+1. Install vscode and necessary extensions, then use vscode to connect to an Arvados shell node for development
+1. Register a workflow, run it on workbench, and view the log
+1. Upload input, run a workflow on it, and view the output
+1. Register a workflow with default inputs
+1. Run a workflow without registering it
 
 ## 1. SSH Setup
 
@@ -56,7 +57,7 @@ Code (abbreviated "vscode") to develop CWL workflows on Arvados.
    1. Workbench: Copy the string following `ARVADOS_API_TOKEN=`
    1. Vscode: Paste the string at the `Value for ARVADOS_API_TOKEN` prompt
 
-# 3. Register & run a workflow
+## 3. Register & run a workflow
 
 1. Vscode: Click on the `lesson1/main.cwl` file
    1. Click on the `Terminal` menu
