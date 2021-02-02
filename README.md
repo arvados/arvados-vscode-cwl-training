@@ -11,12 +11,22 @@ Code (abbreviated "vscode") to develop CWL workflows on Arvados.
 ## 1. SSH Setup
 
 1. (Windows only) Install git for windows [https://git-scm.com/download/win](https://git-scm.com/download/win)
-1. Open bash shell (installed with git for Windows)
+   1. Choose "64-bit Git for Windows Setup".  It does not require admin privileges to install.
+   1. Hit "Next" a bunch of times to accept the defaults
+   1. The most important things is that "install git bash" and "install OpenSSH" are enabled.
+   1. At the end of the installation, you can launch tick a box to git bash directly.
+   1. Open "Git Bash" (installed in the "Git" folder of the start menu)
+1. From an open bash shell
    1. Shell: Run `ssh-keygen`
-   1. Shell: Look for `Your public key has been saved in /c/Users/MyUsername/.ssh/id_rsa.pub`
+      1. Hit enter to save to a default location
+      1. You can choose to protect the key with a password, or just hit enter for no password.
+   1. Shell: Look for a message like `Your public key has been saved in /c/Users/MyUsername/.ssh/id_rsa.pub`
    1. Shell: Run `cat /c/Users/MyUsername/.ssh/id_rsa.pub`
-   1. Shell: Highlight and copy the lines starting with `ssh-rsa …`
-1. Open Arvados workbench
+   1. Shell: Use the pointer to highlight and copy the lines starting
+      with `ssh-rsa …` up to the next blank line.  Right click and
+      select "Copy"
+1. Open Arvados workbench 2.  If necessary, go to the user menu and
+   select "Go to Workbench 2"
    1. Workbench: Go to `SSH keys` in the user menu
    1. Workbench:Click `+Add new ssh key`
    1. Workbench: Paste the key into `Public key` and enter something for `name`
@@ -24,17 +34,17 @@ Code (abbreviated "vscode") to develop CWL workflows on Arvados.
    1. Workbench: Highlight and copy the value in in the `Command line` column.
 1. At the git bash command line
    1. Shell: paste the `ssh shell…` command line you got from workbench.
-   1. Shell: type "yes" if it asks `do you want to continue connecting`
-   1. Shell: You should now be logged into the Arvados shell node.  Note:
-      it can take up to two minutes for the SSH key to be copied to
-      the shell node.  If it doesn't work the first time, wait 60
+   1. Shell: type "yes" if it asks `Are you sure you want to continue connecting`.
+   1. Note: it can take up to two minutes for the SSH key to be copied to
+      the shell node.  If you get "Permission denied" the first time, wait 60
       seconds and try again.
+   1. Shell: You should now be logged into the Arvados shell node.
    1. Shell: Log out by typing `exit`
 
 ## 2. VSCode setup
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/) and start it up
-1. Vscode: go to `Extensions`
+1. Vscode: go to `Extensions` ![](images/Extensions.png)
    1. search for `remote development` and install the Remote Development extension pack from Microsoft
 1. Vscode: On the left side bar, choose `Remote explorer`
    1. In the drop down, choose `SSH targets`
