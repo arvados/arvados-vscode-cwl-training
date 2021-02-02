@@ -58,8 +58,8 @@ Code (abbreviated "vscode") to develop CWL workflows on Arvados.
    1. Search for "benten" and install `CWL (Rabix/Benten)`
    1. You should see a message `Extension is enabled on 'SSH: ...' and disabled locally.`
 1. Vscode: On the left sidebar, choose `Explorer` ![](images/Explorer.png)
-   1. Select `Clone Repository` and then enter [https://github.com/arvados/arvados-vscode-cwl-training](https://github.com/arvados/arvados-vscode-cwl-training)
-   1. Choose `Open`
+   1. Select `Clone Repository` and enter [https://github.com/arvados/arvados-vscode-cwl-training](https://github.com/arvados/arvados-vscode-cwl-training), then click `Open`
+   1. If asked `Would you like to open the cloned repository?` choose `Open`
 1. Go to Arvados Workbench
    1. Workbench: In the user menu, select `Current token`
    1. Vscode: Click on the `Terminal` menu
@@ -167,3 +167,17 @@ The `message` parameter will be taken from the file `lesson4/main-input.yaml`.  
    1. The results of this run will appear in the terminal when the run completes.
 1. Workbench: Paste the workflow identifier into the search box
    1. This will take you to the status page for this workflow
+
+
+## Notes
+
+If you need to change something about the environment of the user on
+the remote host (for example, the user has been added to a new unix
+group) you need to restart the vscode server that runs on the remote
+host.  Do this in vscode:
+
+ctrl+shift+p: `Remote-SSH: Kill VS Code Server on Host`
+
+This is because the vscode server remains running on the remote host
+even after you disconnect, so exiting/restarting vscode on the desktop
+has no effect.
