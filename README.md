@@ -87,9 +87,13 @@ Code (abbreviated "vscode") to develop CWL workflows on Arvados.
    1. Click `Run process`
    1. This should take you to a panel showing the workflow run status
 1. Workbench: workflow run status panel
-   1. Click on the three vertical dots in the top-right corner
+   1. Wait for the badge in the upper right to say `Completed`
+   1. In the lower panel, double click on the `echo` workflow step
+   1. This will take you to the status panel for the `echo` step
+   1. Click on the three vertical dots in the top-right corner next to `Completed`
    1. Choose `Log`
-   1. Under `event type` choose `stdout`
+   1. This will take you to the log viewer panel
+   1. Under `Event Type` choose `stdout`
    1. You should see your message
 
 ## 4. Working with input and output files
@@ -99,14 +103,15 @@ Code (abbreviated "vscode") to develop CWL workflows on Arvados.
    1. Click `Run Task…`
    1. Select `Register or update CWL workflow on Arvados Workbench`
 1. Go to your desktop
-   1. Using a text editor such as notepad, create a file "message.txt"
-   1. Enter a message like "Hello world" and save
+   1. Right click on the desktop, select `New > Text Document`
+   1. Name the file `message.txt`
+   1. Enter a message like "Hello earth" and save
 1. Workbench: Go to `+NEW` and select `New project`
    1. Enter a name for the project like "Lesson 2"
    1. You should arrive at the panel for the new project
 1. Arvados workbench: With `Lesson 2` project selected
    1. Click on +NEW and select `New collection`
-   1. Call the collection "my message"
+   1. For Collection Name enter "my message"
    1. Drag and drop `message.txt` into the browser
    1. Click `Create a collection`
    1. The file should be uploaded and then you will be on the collection page
