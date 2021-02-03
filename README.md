@@ -104,7 +104,7 @@ Code (abbreviated "vscode") to develop CWL workflows on Arvados.
    1. Select `Register or update CWL workflow on Arvados Workbench`
 1. Go to your desktop
    1. Right click on the desktop, select `New > Text Document`
-   1. Name the file `message.txt`
+   1. Name the file `message`
    1. Enter a message like "Hello earth" and save
 1. Workbench: Go to `+NEW` and select `New project`
    1. Enter a name for the project like "Lesson 2"
@@ -129,13 +129,17 @@ Code (abbreviated "vscode") to develop CWL workflows on Arvados.
    1. Click on the dot menu
    1. Choose `Outputs`
    1. Right click on `reverse.txt`
-   1. Click on `Download`
-   1. Open the downloaded file.  It should have your results.
+   1. Click on `Open in new tab`
+   1. The results should be visible in a new browser tab.
 
 ## 5. Register a workflow with default inputs
 
 The default value for the `message` parameter will taken from the `lesson3/defaults.yaml` file
 
+1. Vscode: Click on the `lesson3/main.cwl` file
+   1. Click on the `Terminal` menu
+   1. Click `Run Task…`
+   1. Select `Register or update CWL workflow on Arvados Workbench`
 1. Workbench: Go to `+NEW` and select `New project`
    1. Enter a name for the project like "Lesson 3"
    1. You should arrive at the panel for the new project
