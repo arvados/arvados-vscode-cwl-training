@@ -174,7 +174,7 @@ The `message` parameter will be taken from the file `lesson4/main-input.yaml`.  
 1. Vscode: In the bottom panel select the `Terminal` tab
    1. In the upper right corner of the Terminal tab select `Task - Run CWL Workflow` from the drop-down
    1. Look for logging text like `submitted container_request zzzzz-xvhdp-0123456789abcde`
-   1. Highlight and copy the workflow identifier (this the string containing -xvhdp- in the middle)
+   1. Highlight and copy the workflow identifier (this the string containing `-xvhdp-` in the middle)
    1. The results of this run will appear in the terminal when the run completes.
 1. Workbench: Paste the workflow identifier into the search box
    1. This will take you to the status page for this workflow
