@@ -150,6 +150,8 @@ The default value for the `message` parameter will taken from the `lesson3/defau
    1. The `#main/message` parameter will be pre-filled with your default value.  You can choose to change it or use the default.
    1. Click `Run process`
    1. This should take you to the status page for this workflow
+   1. The greeting will appear in the `Log` of the `echo` task, which
+      can be found the same way as described earlier in section 3.
 
 ## 6. Run a workflow without registering it
 
