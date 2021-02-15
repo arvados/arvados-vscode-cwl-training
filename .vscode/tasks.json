@@ -16,7 +16,7 @@
         {
             "label": "Configure Arvados",
             "type": "shell",
-            "command": "scripts/configure-arv ${input:api_host} ${input:api_token}",
+            "command": "scripts/configure-arv '${input:api_info}'",
             "problemMatcher": []
         },
         {
@@ -28,15 +28,9 @@
     ],
     "inputs": [
         {
-            "id": "api_host",
+            "id": "api_info",
             "type": "promptString",
-            "description": "Value for ARVADOS_API_HOST"
-        },
-        {
-            "id": "api_token",
-            "type": "promptString",
-            "description": "Value for ARVADOS_API_TOKEN",
-            "password": true
+            "description": "Current API_TOKEN and API_HOST from Workbench"
         },
         {
             "id": "project_uuid",
