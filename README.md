@@ -64,16 +64,16 @@ Code (abbreviated "vscode") to develop CWL workflows on Arvados.
 1. Vscode: On the left sidebar, choose `Explorer` ![](images/Explorer.png)
    1. Select `Clone Repository` and enter [https://github.com/arvados/arvados-vscode-cwl-training](https://github.com/arvados/arvados-vscode-cwl-training), then click `Open`
    1. If asked `Would you like to open the cloned repository?` choose `Open`
-1. Vscode: Click on the `Terminal` menu
+1. Go to Arvados Workbench
+   1. Workbench: In the user menu, select `Current token`
+   1. Workbench: Click on `Copy to Clipboard`.
+   1. Workbench: You should see a notification `Token copied to clipboard`.
+   1. Go to Vscode
+   1. Vscode: Click on the `Terminal` menu
    1. Vscode: Click `Run Task…`
    1. Vscode: Select `Configure Arvados`
-   1. Go to Arvados Workbench
-   1. Workbench: In the user menu, select `Current token`
-   1. Workbench: Copy the text following `ARVADOS_API_HOST=` to the end of the line
-   1. Vscode: Paste the string at the `Value for ARVADOS_API_HOST` prompt
-   1. Workbench: Copy the text following `ARVADOS_API_TOKEN=` to the end of the line
-   1. Vscode: Paste the string at the `Value for ARVADOS_API_TOKEN` prompt
-   1. This will create files called `API_HOST` and `API_TOKEN`
+   1. Vscode: Paste text into the `Current API_TOKEN and API_HOST from Workbench` prompt
+   1. Vscode: This will create files called `API_HOST` and `API_TOKEN`
 
 ## 3. Register & run a workflow
 
