@@ -1,4 +1,0 @@
-#!/bin/sh
-echo "$*" | sed 's/.*ARVADOS_API_TOKEN=\([^ ]*\).*/\1/' > API_TOKEN
-echo "$*" | sed 's/.*ARVADOS_API_HOST=\([^ ]*\).*/\1/' > API_HOST
-chmod og-rw API_HOST API_TOKEN

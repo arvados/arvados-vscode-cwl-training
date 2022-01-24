@@ -14,9 +14,15 @@
             "problemMatcher": []
         },
         {
-            "label": "Configure Arvados",
+            "label": "Set Arvados Host",
             "type": "shell",
-            "command": "scripts/configure-arv '${input:api_info}'",
+            "command": "scripts/set-host '${input:api_host}'",
+            "problemMatcher": []
+        },
+        {
+            "label": "Set Arvados Token",
+            "type": "shell",
+            "command": "scripts/set-token '${input:api_token}'",
             "problemMatcher": []
         },
         {
@@ -28,9 +34,14 @@
     ],
     "inputs": [
         {
-            "id": "api_info",
+            "id": "api_host",
             "type": "promptString",
-            "description": "Current API_TOKEN and API_HOST from Workbench"
+            "description": "Current API Host from Workbench, under 'Get API Token'"
+        },
+        {
+            "id": "api_token",
+            "type": "promptString",
+            "description": "Current API Token from Workbench, under 'Get API Token'"
         },
         {
             "id": "project_uuid",

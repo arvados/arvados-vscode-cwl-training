@@ -1,0 +1,3 @@
+#!/bin/sh
+echo $1 > API_TOKEN
+chmod og-rw API_TOKEN
