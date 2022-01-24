@@ -3,9 +3,9 @@ set -e
 FILE=$1
 DIR=$(dirname $FILE)
 . $(dirname $0)/setup-env
+set -x
 FILEBASE=$(basename "$FILE" .cwl)
 if test -s $DIR/${FILEBASE}-input.yaml ; then
     INPUT=$DIR/${FILEBASE}-input.yaml
 fi
-echo arvados-cwl-runner $PROJECT_UUID $FILE $INPUT
 arvados-cwl-runner $PROJECT_UUID $FILE $INPUT
